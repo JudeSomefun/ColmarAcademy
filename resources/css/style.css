@@ -4,19 +4,18 @@ font-size: 16px;
 color: black;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: azure;
-text-align: center;
 }
 
 header {
    width: 100%;
-   position: fixed;
+   position: static;
    z-index: 1;
-   height: 64px;
+   height: 64px; 
 }
 
 header img {
     height: 32px;
-    padding-left: 24px;
+    padding: 32px 24px;
 }
 nav {
     text-align: right;
@@ -26,4 +25,24 @@ nav span {
     display: inline-block;
     justify-content: space-between 16px;
     padding-right: 24 px;
+}
+img .container-main-banner {
+    background-image: url('resources/images/banner.jpg');
+    background-position: left;
+    padding: 32px 24px;
+    width: 60%;
+    height: auto;
+}
+.container-thesis-exhibit{
+    display: flex;
+}
+video thesis-exhibit-exhibit{
+    display: inline-block;
+    width: 60%
+}
+.thesis-exhibit-descriptor{
+    width: 40%;
+}
+footer {
+    display: inline-block;
 }
