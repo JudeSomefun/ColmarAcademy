@@ -29,10 +29,17 @@ nav span {
 img .container-main-banner {
     background-image: url('resources/images/banner.jpg');
     background-position: left;
+    position:fixed;
     padding: 32px 24px;
     width: 60%;
     height: auto;
+    display: block;
 }
+.container-main-banner {
+    background-color: lightgrey;
+    display: block;
+}
+
 .container-thesis-exhibit{
     display: flex;
 }
@@ -45,4 +52,11 @@ video thesis-exhibit-exhibit{
 }
 footer {
     display: inline-block;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 }
