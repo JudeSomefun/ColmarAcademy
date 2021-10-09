@@ -3,14 +3,31 @@ body {
 font-size: 16px;
 color: black;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-background-color: azure;
+background-color: rgb(210, 219, 219);
+text-align: center;
+}
+
+a {
+    color:deepskyblue;
+}
+
+h1 {
+    margin: 0;
+    padding: 32px 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header {
    width: 100%;
    position: static;
    z-index: 1;
-   height: 64px; 
+   height: 64px;
+   display: inline-flex;
 }
 
 header img {
@@ -20,6 +37,7 @@ header img {
 nav {
     text-align: right;
     flex-grow: 1;
+    padding-right: 24px;
 }
 nav span {
     display: inline-block;
@@ -28,16 +46,42 @@ nav span {
 }
 img .container-main-banner {
     background-image: url('resources/images/banner.jpg');
-    background-position: left;
+    background-position: center;
     position:fixed;
     padding: 32px 24px;
     width: 60%;
     height: auto;
     display: block;
+    clear: left;
 }
 .container-main-banner {
     background-color: lightgrey;
-    display: block;
+    display: inline-table;
+}
+
+/* Courses */
+
+
+#container-learning {
+    display: inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#startlearning {
+    padding: 32px
+
+}
+.courses {
+     opacity: 1;
+        padding: 10px;
+        margin: 5px 20px;
+        background-color: black;
+        flex-basis: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 
 .container-thesis-exhibit{
