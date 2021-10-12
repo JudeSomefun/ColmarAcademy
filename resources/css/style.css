@@ -56,9 +56,16 @@ img .container-main-banner {
 }
 .container-main-banner {
     background-color: lightgrey;
-    display: inline-table;
+    display: inline-flex;
+    width: 100%;
 }
-
+#pullquote {
+    width: 60%;
+}
+#orientation {
+    width: 40%;
+    flex-direction: column;
+}
 /* Courses */
 
 
@@ -66,24 +73,26 @@ img .container-main-banner {
     display: inline-flexbox;
     flex-direction: row;
     justify-content: center;
+    padding: 72px;
 
 }
 
 #startlearning {
-    padding: 32px
+    padding: 32px;
 
 }
 .courses {
      opacity: 1;
-        padding: 10px;
-        margin: 5px 20px;
+        padding: 40px;
+        margin: 32px 32px;
         background-color: azure;
         flex-basis: auto;
     
-        display: inline-flexbox;
-        flex-direction: row;
-        justify-content:space-around;
-        flex-wrap: wrap;
+        display: inline-flex;
+        flex-direction:row;
+        justify-content:space-between;
+        flex-flow: wrap;
+        text-align:left;
 }
 
 .container-thesis-exhibit{
