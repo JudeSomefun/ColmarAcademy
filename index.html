@@ -5,49 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to Colmar Academy</title>
         <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet">
+        <script=></script>
     </head>
     <body>
-        <header class="flex-container">
-            <img src="resources/images/ic-logo.svg"><p>Colmar Academy</p>
-           <nav>
-              <span><a href="#">On campus</a></span>
-              <span><a href="#">Online</a></span>
-              <span><a href="#">For companies</a></span>
-              <span><a href="#">Sign in</a></span>
-           </nav>
+        <!---Navigation Bar--> 
+        <header>
+            <div class="logo">
+                <img src="resources/images/ic-logo.svg">
+                <span id="Colmar">Colmar</span><span id="Academy">Academy</span>
+            </div>
+
+            <nav class="desktop">
+                <span><a href="#">On campus</a></span>
+                <span><a href="#">Online</a></span>
+                <span><a href="#">For companies</a></span>
+                <span><a href="#">Sign in</a></span>
+            </nav>
+
+            <nav class="mobile">
+                <img src="resources/images/ic-logo.svg">
+                <img src="resources/images/ic-on-campus.svg">
+                <img src="resources/images/ic-online.svg">
+                <img src="resources/images/ic-login.svg">
+            </nav>
         </header>
-        <div class="container-main-banner">
-            <img src="resources/images/banner.jpg" class="banner">
-            <h1>Learn something new everyday</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        
+        <!--Main Area-->
+
+        <div class="firstcontent">
+            <div class="photos" id="banner">
+                <img src="resources/images/banner.jpg">
+            </div>
             <div>
-                <p>Start here</p>
+                <h1>Learn something new everyday</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="firstcontent" id="start">
+                    <p>Start here</p>
+                </div>
             </div>
         </div>
-        <div class="container-main">
-            <div class="information-main-practice">
-            <img src="resources/images/information-main.jpg">
-            <h1>It doesnt hurt to keep practicing</h1>
-            <p class="descriptor">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accusman urna.  Phasellus sed consequat ex. Etiam eget magna laoreet, effecitur dolor cnosequat, tristique ligula."</p>
-            <h6>Emanuel, Sr Strategist at Hiring.com</h6>
+
+        <!--Information Section-->
+
+        <div class="information">
+
+            <div class="information-main">
+                <img src="resources/images/information-main.jpg">
+                <h1>It doesnt hurt to keep practicing</h1>
+                <p class="">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accusman urna.  Phasellus sed consequat ex. Etiam eget magna laoreet, effecitur dolor cnosequat, tristique ligula."</p>
+                <h6>Emanuel, Sr Strategist at Hiring.com</h6>
             </div>
-            <div class="information" id="Orientation">
-            <img src="resources/images/information-orientation.jpg"
-            <h2>Orientation date</h2>
-            <p>Tue 10/11 & Wed 10/12; 8am-3pm</p>
-            <a href="#" class="Read-More">Read more</a>
+
+            <div class="information-side" id="orientation">
+                <img src="resources/images/information-orientation.jpg">
+                <h2>Orientation date</h2>
+                <p>Tue 10/11 & Wed 10/12; 8am-3pm</p>
+                <a href="#" class="Read-More">Read more</a>
             </div>
-            <div class="information" id="our campus">
-            <h2>Our campus</h2>
-            <p>Find which campus is close by you</p>
-            <a href="#" class="Read-More">Read more</a>
+            <div class="information-side" id="campus">
+                <img src="resources/images/information-campus.jpg">
+                <h2>Our campus</h2>
+                <p>Find which campus is close by you</p>
+                <a href="#" class="Read-More">Read more</a>
             </div> 
-            <div class="information" id="guest lecture">
-            <h2>Our guest lecture</h2>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#" class="Read-More">Read more</a>
+            <div class="information-side" id="guestlecture">
+                <img src="resources/images/information-guest-lecture.jpg">
+                <h2>Our guest lecture</h2>
+                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                <a href="#" class="Read-More">Read more</a>
             </div>
         </div>
+
+        <!--Information Section (Mobile)-->
         <div class="container-learning">
             <h1>Start learning</h1>
             <div class="Courses">
