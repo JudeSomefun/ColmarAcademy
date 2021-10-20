@@ -1,100 +1,62 @@
 /*Universal Styles*/
-body {
+html {
 font-size: 16px;
 color: black;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-background-color: rgb(210, 219, 219);
-text-align: center;
+font-family: 'Montserrat', 'Roboto Slab', 'Source Sans Pro', sans-serif;
+background-color: azure;
 }
 
-a {
-    color:deepskyblue;
-}
-
-h1 {
-    margin: 0;
-    padding: 32px 20px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+/*Navigation Bar*/
 header {
    width: 100%;
    position: static;
    z-index: 1;
-   height: 64px;
-   display: inline-flex;
+   height: 4rem; 
 }
 
-header img {
-    height: 32px;
-    padding: 32px 24px;
+.logo{
+ height: 2rem;
+ padding-left: 1.5rem;
+}
+
+#colmar {
+ color:black
+}
+#academy {
+  color: rgba(128, 128, 128, 0.5)
+}
+header .mobile {
+    align-items: justify;
 }
 nav {
     text-align: right;
     flex-grow: 1;
-    padding-right: 24px;
 }
+
 nav span {
     display: inline-block;
     justify-content: space-between 16px;
     padding-right: 24 px;
+
 }
 img .container-main-banner {
     background-image: url('resources/images/banner.jpg');
-    background-position: center;
-    position:fixed;
+    background-position: left;
+    position: fixed;
     padding: 32px 24px;
     width: 60%;
     height: auto;
     display: block;
-    clear: left;
+    z-index: -1;
 }
 .container-main-banner {
     background-color: lightgrey;
-    display: inline-flex;
-    width: 100%;
-}
-#pullquote {
-    width: 60%;
-}
-#orientation {
-    width: 40%;
-    flex-direction: column;
-}
-/* Courses */
-
-
-#container-learning {
-    display: inline-flexbox;
-    flex-direction: row;
-    justify-content: center;
-    padding: 72px;
-
+    display: block;
 }
 
-#startlearning {
-    padding: 32px;
-
+.container-main-banner #start{
+    padding: 8px;
 }
-.courses {
-     opacity: 1;
-        padding: 40px;
-        margin: 32px 32px;
-        background-color: azure;
-        flex-basis: auto;
-    
-        display: inline-flex;
-        flex-direction:row;
-        justify-content:space-between;
-        flex-flow: wrap;
-        text-align:left;
-}
-
 .container-thesis-exhibit{
     display: flex;
 }
