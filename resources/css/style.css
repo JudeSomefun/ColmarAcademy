@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-html {
+body {
 font-size: 16px;
-font-family: 'Montserrat', 'Roboto Slab', 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', 'Roboto Slab', sans-serif;
 color: black;
 background-color: rgb(209, 200, 185);
 }
@@ -21,7 +21,7 @@ header {
     z-index: 3;
     height: 4rem;
     background-color:rgb(147, 151, 150);
-    align-items: center;
+    align-items:flex-end;
 }
 
 #colmar {
@@ -32,13 +32,14 @@ header {
 }
 
 #logo{
- height: 2rem;
+ height: 3rem;
+ width: auto;
  padding-left: 1.5rem;
 }
 
 
 header .mobile {
-    align-items: justify;
+    display: none;
 }
 nav {
     text-align: right;
@@ -47,24 +48,28 @@ nav {
 
 nav span {
     align-items: flex-end;
-    display: inline-block;
-    justify-content: space-between 16px;
-    padding-right: 24 px;
-
+    display: inline;
+    justify-content: space-between, 1rem;
+    padding-right: 1.5rem;
 }
-img .container-main-banner {
-    background-image: url('resources/images/banner.jpg');
+
+/*Main Area*/
+ 
+.learn {
+    padding-left: 1.5rem;
+}
+#banner{
     background-position: left;
-    position: fixed;
-    padding: 32px 24px;
+    padding: 2rem, 1.5rem;
     width: 60%;
     height: auto;
-    display: block;
-    z-index: -1;
+    display: block;;
 }
-.container-main-banner {
+.firstcontent {
     background-color: lightgrey;
     display: block;
+    float: left;
+    width: 100%;
 }
 
 .container-main-banner #start{
